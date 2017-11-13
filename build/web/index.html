@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>BareSounds - Fire beats for Album/Mixtape</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <script src="scripts/drop_down_menu.js" type="text/javascript"></script>
+        <script src="scripts/audio_player.js" type="text/javascript"></script>
+    </head>
+      
+    <body>
+        <nav_bar> 
+            <ul class="navi">
+            <li style="float: left; padding-left: 330px" class="nav"><a class="navbtn" href="index.html">Home</a></li>
+            <li class="nav"><a class="navbtn" href="about.html">About</a></li>
+            <li class="nav"><a class="navbtn" href="blog.html">Blog</a></li>
+            <li class="nav"><a class="navbtn" href="contact.html">Contact</a></li>
+            <li class="nav"><a class="navbtn" href="carts.jsp">Shop</a></li>
+            </ul>
+        </nav_bar>
+    
+        <header class="bgimage">
+            <h1 class="pgtitle">BareSound Beats</h1>
+            <h3 class="pgtitle2">Professional instrumentals for Music Artists</h3>
+        </header>
+        
+        <div class="front_pg_wrapper">
+            <div class="audio_center">
+                <div class="menu">
+                    <button onclick="myFunction()" class="dropbtn">Sort</button>
+                        
+                    <div id="myDropdown" class="dropdown-content">
+                      <a href="#">HipHop</a>
+                      <a href="#">Trap</a>
+                      <a href="#">R&B</a>
+                    </div>
+                    
+                    <ul class="menu_list" >
+                        <li class="menu_li"> <a id="help" href="">Help?</a></li>
+                        <li class="menu_li"> <a id="Search" href="">Search</a></li>
+                        <li class="menu_li"> <input type="text" name="seachbar" value="" /></li>
+                        <li class="menu_li"> <a id="CheckOut" href="">CheckOut</a></li>                       
+                    </ul>
+                    
+                </div>
+                <BR>
+            <audio id="audio" preload="auto" tabindex="0" controls="" type="audio/mpeg">
+                <source type="audio/mp3" src="http://www.archive.org/download/bolero_69/Bolero.mp3">
+                Sorry, your browser does not support HTML5 audio.
+            </audio>
+                <BR>
+                        
+            <ul id="playlist">
+                <li class="active"> <img class="music_disc" src="images/musicdisc.png" alt=""/> <a href="http://www.archive.org/download/bolero_69/Bolero.mp3">Ravel Bolero</a></li>
+                
+                <li ><a class"plylist" href="http://www.archive.org/download/MoonlightSonata_755/Beethoven-MoonlightSonata.mp3">Moonlight Sonata - Beethoven</a></li>
+                <li ><a class"plylist" href="http://www.archive.org/download/CanonInD_261/CanoninD.mp3">Canon in D Pachabel</a></li>  
+                <li ><a class"plylist" href="http://www.archive.org/download/PatrikbkarlChamberSymph/PatrikbkarlChamberSymph_vbr_mp3.zip">patrikbkarl chamber symph</a></li>
+            </ul>
+                
+                
+       
+            <form type=POST action=carts.jsp>
+            <BR>
+            Please enter item to add or remove:
+            <br>
+            Add Item:<br><br>
+
+            "Bangers" by MassBeats<br><br>
+
+            "X-files" by ShakinBeats<br><br>
+
+            "DrakeStyle" by FLOEtics<br><br>
+
+            "Late Night" by DJ Jump<br><br>
+
+
+
+            <br>
+            <INPUT TYPE=submit name="submit" value="add">
+            <INPUT TYPE=submit name="submit" value="remove">
+
+            </form>
+            </FONT>
+                
+            </div>
+        </div>       
+    </body>
+</html>
