@@ -20,9 +20,26 @@ and open the template in the editor.
         <script src="scripts/drop_down_menu.js" type="text/javascript"></script>
         <script src="scripts/audio_player.js" type="text/javascript"></script>
         <script src="scripts/jquery-1.6.1.min.js" type="text/javascript"></script>
-
+        <script src="scripts/jquery.jplayer.js" type="text/javascript"></script>
         <script src="scripts/dropzone.js" type="text/javascript"></script>
-         
+        <script src="scripts/myplaylist.js" type="text/javascript"></script>
+        <script src="scripts/ttw-music-player-min.js" type="text/javascript"></script>
+        <script src="scripts/ttw-music-player.js" type="text/javascript"></script>
+      
+        <script type="text/javascript">
+        $(document).ready(function(){
+            var description = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id tortor nisi. Aenean sodales diam ac lacus elementum scelerisque. Suspendisse a dui vitae lacus faucibus venenatis vel id nisl. Proin orci ante, ultricies nec interdum at, iaculis venenatis nulla. ';
+
+            $('body').ttwMusicPlayer(myPlaylist, {
+                autoPlay:false, 
+                description:description,
+                jPlayer:{
+                    swfPath:'../plugin/jquery-jplayer' //You need to override the default swf path any time the directory structure changes
+                }
+            });
+        });
+    </script>
+        
     <script type="text/javascript">
             // "myAwesomeDropzone" is the camelized version of the HTML element's ID
         Dropzone.options.myAwesomeDropzone = {
