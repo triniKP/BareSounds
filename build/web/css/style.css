@@ -14,6 +14,10 @@ body {
     text-align: center;
 }
 
+form.logform{
+    margin-top: 80px;
+}
+
 ul.navi{
     margin:0 0 0 0;
     height: 60px;
@@ -56,6 +60,7 @@ a.navbtn:visited {
 header{
     width: 100%;
     height: 650px;
+    box-shadow: 3px 3px 5px #171717;
 }
 header.bgimage{
     text-align:center;
@@ -206,8 +211,6 @@ button.dropbtn{
 
 li a{
     color:#eeeedd;
-    background-color:#242424;
-    padding:25px;
     display:block;
     text-decoration: none;
 }
@@ -233,4 +236,36 @@ li{
     padding: 3px 0 3px 0;
     width: 100%;
     margin:auto auto;
+}
+
+
+table.tabledesign{
+    background-color: #242424;
+    color: #E8AE00;
+    box-shadow: 2px 2px 4px #171717;
+    border: #666;
+    border-radius: 5px;
+}
+
+center{
+    color: #E8AE00;
+}
+a.reg{
+    color:#eeeedd;
+    text-decoration: none;
+}
+
+g-recaptcha{
+    margin-top: 5px;
+}
+
+#parent{
+
+}
+
+div.added_track{
+    border: 2px solid #E8AE00;
+    margin: 20px auto 20px auto;
+    width: 700px;
+    height: 125px;
 }
